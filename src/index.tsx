@@ -1,10 +1,19 @@
 import * as React from 'react'
-import styles from './styles.module.less'
+
+import { PersonalCenterHeader } from './components/0-Header'
+import { PersonalCenterTab } from './components/1-Tab'
+import { PersonalCenterContainer } from './components/2-Container'
 
 interface Props {
   text: string
 }
 
 export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+  return (
+    <>
+      <PersonalCenterHeader />
+      <PersonalCenterTab />
+      <PersonalCenterContainer />
+    </>
+  )
 }
