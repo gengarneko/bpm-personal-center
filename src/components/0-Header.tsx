@@ -9,5 +9,5 @@ const Header = styled.div`
 `
 
 export const PersonalCenterHeader = () => {
-  return <Header></Header>
+  return <Header />
 }
